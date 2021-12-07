@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>出校码</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="static/css/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="static/css/styles2.css" type="text/css" rel="stylesheet"/>
+    <script src="static/js/jquery-1.7.1.min.js"></script>
+    <script src="static/js/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="static/js/prototypePre.js"></script>
+    <script src="static/js/document.js"></script>
+    <script src="static/js/prototypePost.js"></script>
+    <script src="static/js/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u0" class="ax_default box_2">
+        <div id="u0_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u1" class="ax_default text_field">
+        <input id="u1_input" type="text" value="" maxlength="11"/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u2" class="ax_default text_field">
+        <input id="u2_input" type="text" value=""/>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u3" class="ax_default text_field">
+        <input id="u3_input" type="text" value=""/>
+      </div>
+	  
+      <div id="u6" class="ax_default label">
+	     <p style="background-color:maroon;">0</p>
+		 <p style="background-color:lime;">1</p>
+		 <p style="background-color:teal;">2</p>
+		 <p style="background-color:purple;">3</p>
+		 <p style="background-color:olive;">4</p>
+		 <p style="background-color:grey;">5</p>
+		 <p style="background-color:pink;">6</p>
+		 <p style="background-color:blue;">7</p>
+		 <p style="background-color:red;">8</p>
+		 <p style="background-color:yellow;">9</p>
+		 <p style="background-color:aqua;">10</p>
+         <p style="background-color:silver;">11</p>
+	       <p style="background-color:green;">12:green</p>
+	      <p style="background-color:navy;">13:navy</p>
+	      <p style="background-color:fuchsia;">14:fuchsia</p>
+        </div>	  
+       
+	   <!-- Unnamed (文本框) -->
+      <div id="u4" class="ax_default text_field">
+        <input id="u4_input" type="text" value="颜色编号"/>
+      </div>
+	 
+       <!-- Unnamed (提交按钮) -->
+      <div id="u5" class="ax_default html_button">
+        <input id="u5_input" type="button" value="提交"/>
+        <script>
+        document.getElementById("u5_input").onclick=function(){
+          if (window.localStorage) {
+            localStorage.value1=document.getElementById("u1_input").value;
+            localStorage.value2=document.getElementById("u2_input").value;
+            localStorage.value3=document.getElementById("u3_input").value;
+			localStorage.value4=document.getElementById("u4_input").value;
+            location.href="second2.html"
+          }else{
+            alert("不支持")
+          }
+        }
+      </script>
+      </div>
+      <!-- Unnamed (提交按钮) -->
+    </div>
+  </body>
+</html>
